@@ -1,5 +1,10 @@
-_site
+_site/
+_drafts/
+.DS_Store
+.idea/
 .sass-cache
-.jekyll-cache
+Gemfile
+Gemfile.lock
+_posts/.MWebMetaData/
 .jekyll-metadata
-vendor
+start

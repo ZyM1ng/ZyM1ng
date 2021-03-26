@@ -1,35 +1,60 @@
-# NexT
+![DEMO](demo.png)
 
-> 精于心，简于形
+原主题：https://github.com/zker-themes/hexo-theme-lightime
 
-NexT 是由 [Hexo NexT](https://github.com/iissnan/hexo-theme-next) 移植而来的 Jekyll 主题。<!--commit: f951075d9b739d26b42472431995fa68d08796aa-->
+## 安装 Install
 
-<a href="http://simpleyyt.github.io/jekyll-theme-next/" target="_blank">在线预览 Preview</a> | <a href="http://simpleyyt.com" target="_blank">Yitao's Blog</a> | <a href="http://theme-next.simpleyyt.com" target="_blank">NexT 使用文档</a> |  [English Documentation](README.en.md)
+```bash
+git clone -b master https://github.com/F0r3at/Lights themes/Lights
+```
 
-[![Join the chat at https://gitter.im/simpleyyt/jekyll-theme-next](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jekyll-theme-next/lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+## 特色 Features
 
-![NexT Schemes](http://iissnan.com/nexus/next/next-schemes.jpg)
+- 单栏，简洁。 / One column , Simple.
+- 集成Gitment和Disqus评论系统。使用InstantClick实现无刷新浏览，更快更流畅。 / Disqus&Gitment comment-system. And used InstantClick speeds up.
+- 支持Service Worker，但和InstantClick冲突，按需选择。 / Supports Service Worker, but conflicts with InstantClick. PLZ select on demand.
+- 代码高亮。 / Highlight code.
+- 文章页内分享功能。 / Sharing component in article.
+- 支持归档页，分类、标签页。 / Archive page, Categories page, Tags page.
+- i18n国际化。 / i18n.
+- 去掉了MoreRead功能
+- 修改了部分字体
 
+**之前学了一下，发现自己并不是前端的料，各位大佬可以继续开发~**
 
-## 浏览器支持 Browser support
+## 配置 Config
+```yaml
+menu: #TITLE: link
+  About: about/
+  Archives: archives/
 
-![Browser support](http://iissnan.com/nexus/next/browser-support.png)
+profile_link: about/ #profile avatar-img link
+avatar: /images/avatar.png #Please also prepare a HDer picture and add suffix@2x put in the same directory.
 
+gitment:
+ username: 
+ repo: 
+ id: 
+ secret: 
 
-## 贡献 Contributing
+disqus_shortname: 
 
-欢迎提交问题与需求，修复代码。
+google_analytics: UA-XXXXXXXX-Y
 
+twitter: 
 
-## 开发 Development
+hitokoto: false #Output a Chinese sentence to description
+instantclick: true #open INSTANTCLICK
+service_worker: false #open SERVICE WORKER
 
-NexT 主旨在于简洁优雅且易于使用，所以首先要尽量确保 NexT 的简洁易用性。
+js: #CDN
+  instantclick: //cdnjs.loli.net/ajax/libs/instantclick/3.0.1/instantclick.min.js
+  hitokoto: //v1.hitokoto.cn/?encode=js&select=%23hitokoto
+  service_worker: /sw.js
+  gitment: /js/gitment.browser.js
 
-NexT is built for easily use with elegant appearance. First things first, always keep things simple.
+css: #CDN
+  gitment: 
+```
 
-
-## 捐赠
-
-支付宝捐赠链接还是要有的，万一真的有人捐呢。
-
-![支付宝扫码捐赠](http://7lryc0.com1.z0.glb.clouddn.com/a6x049034plyvjm1rvn4h28%20%281%29.png)
+**[DEMO](http://getshe11.com/)**

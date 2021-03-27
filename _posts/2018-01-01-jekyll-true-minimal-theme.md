@@ -33,3 +33,5 @@ net group "domain computers" /domain
 | tset       | test2tset | t323ttest2 |
 
 ![image-20210327121321233](../uploads/image-20210327121321233.png)
+
+![image-20210327123104793](../uploads/image-20210327123104793.png)
